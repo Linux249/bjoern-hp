@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 import AppStyle from './style/App'
 import Header from './components/Header'
 import Body from './style/Body'
-import { HashRouter } from 'react-router-dom'
+import { HashRouter, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import Bilder from './pages/Ausstellungen'
+import Ausstellungen from './pages/Bilder'
+import Bjoern from './pages/Bjoern'
+import Kontakt from './pages/Kontakt'
 
 class App extends Component {
     render() {
@@ -12,9 +17,11 @@ class App extends Component {
                     <Header />
 
                     <Body>
-                        <p className="App-intro">
-
-                        </p>
+                        <Route exact path='/' component={Home}/>
+                        <Route  path='/bilder' component={Bilder}/>
+                        <Route  path='/ausstellungen' component={Ausstellungen}/>
+                        <Route  path='/björn' component={Bjoern}/>
+                        <Route  path='/kontakt' component={Kontakt}/>
                     </Body>
                 </AppStyle>
             </HashRouter>

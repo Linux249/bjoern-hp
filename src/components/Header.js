@@ -9,7 +9,7 @@ export default () => <Header>
     <Menu>
         <Link to='/Bilder'>bilder</Link>
         <Link to='/Ausstellungen' >ausstellungen </Link>
-        <Link to='/Björn'>über mich</Link>
+        <Link to='/Björn'>björn</Link>
         <Link to='/Kontakt' >kontakt </Link>
     </Menu>
 </Header>

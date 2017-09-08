@@ -4,3 +4,7 @@ body {
   font-family: 20px/23px "BayerNext-Regular",sans-serif
 
 }
+
+a {
+    text-decoration: none;
+}

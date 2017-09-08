@@ -1,10 +1,16 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 20px/23px "BayerNext-Regular",sans-serif
-
+    margin: 0;
+    padding: 0;
+    font: 30px/35px "BayerNext-Regular",sans-serif;
+    font-variant: simplified;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+
 }

@@ -5,10 +5,10 @@ import Title from '../style/Titel'
 import { Link } from 'react-router-dom'
 
 export default () => <Header>
-    <Title>BJÖRN RUPPERT</Title>
+    <Title>björn ruppert</Title>
     <Menu>
         <Link to='/Bilder'>bilder</Link>
-        <Link to='/Ausstellungen' >ausstelungen </Link>
+        <Link to='/Ausstellungen' >ausstellungen </Link>
         <Link to='/Björn'>über mich</Link>
         <Link to='/Kontakt' >kontakt </Link>
     </Menu>

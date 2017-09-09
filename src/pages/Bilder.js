@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from '../components/Image'
+import Page from '../style/Page'
 
 import img1 from '../img/1.jpeg'
 import img2 from '../img/2.jpeg'
@@ -13,7 +14,7 @@ import img9 from '../img/9.jpeg'
 import img10 from '../img/10.jpeg'
 import img11 from '../img/11.jpeg'
 
-export default () => <div>
+export default () => <Page>
     <Image img={img1}/>
     <Image img={img2}/>
     <Image img={img3}/>
@@ -25,4 +26,4 @@ export default () => <div>
     <Image img={img9}/>
     <Image img={img10}/>
     <Image img={img11}/>
-</div>
+</Page>

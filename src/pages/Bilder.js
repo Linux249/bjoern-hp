@@ -3,7 +3,7 @@ import Image from '../components/Image'
 import Page from '../style/Page'
 
 
-const context = require.context('../img', false ,/\.(jpg)$/)
+const context = require.context('../img/paintings', false ,/\.(jpg)$/)
 const imgs = context.keys().map( (filename, i) =>
     <Image key={i} img={context(filename)} name={filename.replace('./', '').replace('.jpg','')}/>
 )

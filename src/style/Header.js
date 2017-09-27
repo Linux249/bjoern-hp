@@ -6,12 +6,13 @@ export default styled.div`
     max-width: 1000px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     height: 200px;
     
     //border: solid;
     
-    border-left: solid;    
-    border-top: solid;        
+    //border-left: solid;    
+    border-bottom: solid;        
    
     margin: 20px;
 `

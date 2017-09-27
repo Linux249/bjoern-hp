@@ -3,5 +3,14 @@
  */
 import React from 'react'
 import Image from '../style/Image'
+import styled from 'styled-components'
 
-export default ({ img, name }) => <Image src={img} alt={name} />
+const Img = styled.img`
+    width: 100%;
+    //height: 300px;
+`
+
+export default ({ img, name }) =>
+    <Image>
+        <Img src={img} alt={name}/>
+    </Image>

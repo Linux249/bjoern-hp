@@ -4,16 +4,17 @@ import Page from '../style/Page'
 import profil from '../img/profil.jpg'
 
 const Img = styled.img`
-    //width: auto;
+    width: inherit;
     max-width: 450px;
-    min-width: 250px;
+    min-width: 200px;
     float: left;
     margin-right: 10px;
     //margin-bottom: 20px;
 `
 
 const P = styled.p`
-    font-size: 1.4rem;
+    width: 95%;
+    font-size: 1.3rem;
     margin-top: 0;
 `
 

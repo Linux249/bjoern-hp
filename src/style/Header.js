@@ -5,7 +5,7 @@ export default styled.div`
     width: 90%;
     max-width: 1000px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-wrap: wrap;
     min-height: 200px;
 

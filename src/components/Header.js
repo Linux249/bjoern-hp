@@ -3,7 +3,7 @@ import Header from '../style/Header'
 import Menu from '../style/Menu'
 import Title from '../style/Titel'
 import Line from '../style/Line'
-import { Link } from 'react-router-dom'
+import Link from '../style/Link'
 
 export default () => <Header>
     <Title>björn ruppert</Title>

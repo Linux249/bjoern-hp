@@ -12,7 +12,7 @@ export default styled.div`
     //border: solid;
     
     //border-left: solid;    
-    border-bottom: solid;        
+   // border-bottom: solid;        
    
     margin: 20px;
 `

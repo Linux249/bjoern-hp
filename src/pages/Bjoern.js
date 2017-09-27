@@ -4,6 +4,7 @@ import Page from '../style/Page'
 import profil from '../img/profil.jpg'
 
 const Img = styled.img`
+    width: auto;
     max-width: 300px;
     float: left;
     //margin-right: 20px;
@@ -15,7 +16,7 @@ const P = styled.p`
     margin-top: 0;
 `
 
-export default () => <div>
+export default () => <Page>
     <P>
         <Img src={profil} alt={profil.toString()} />
         Ruppert, geboren 1980 in Ulm, lebt und arbeitet als freischaffender Künstler in Heidelberg.
@@ -28,4 +29,4 @@ export default () => <div>
         Trotz des langwierigen Arbeitsprozesses bewahren die Bilder etwas rohes und Ursprüngliches.
         Die Farbe wird von Ruppert in zahlreichen Schichten aufgetragen und teilweise wieder abgeschliffen, wodurch schwere rauhe Oberflächenstrukturen als auch leichte transparente Flächen entstehen.
     </P>
-</div>
+</Page>

@@ -5,14 +5,9 @@ export default styled.div`
     width: 90%;
     max-width: 1000px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    height: 200px;
-    
-    //border: solid;
-    
-    //border-left: solid;    
-   // border-bottom: solid;        
-   
-    margin: 20px;
+    min-height: 200px;
+
+    margin-top: 20px;
 `

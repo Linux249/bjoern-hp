@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export default styled.div`
     max-width: 300px;
+    height: 120px;
     
     display: flex;
     align-items: center;

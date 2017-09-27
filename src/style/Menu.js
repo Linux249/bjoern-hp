@@ -10,7 +10,7 @@ export default styled.div`
     font-family: monospace;
     font-size: 1.4rem;
     
-    padding: 40px;    
+    //padding: 40px;    
        
        
 `

@@ -4,7 +4,7 @@
 import styled from 'styled-components'
 
 export default styled.div`
-    width: 90%;
+    width: 100%;
     border-bottom: solid;  
-    align-self: center
+    margin: 10px;
 `

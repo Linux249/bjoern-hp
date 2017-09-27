@@ -3,9 +3,5 @@
  */
 import React from 'react'
 import Image from '../style/Image'
-import Menu from '../style/Menu'
-import Title from '../style/Titel'
-import { Link } from 'react-router-dom'
 
-export default ({ img }) => <Image src={img} />
-
+export default ({ img, name }) => <Image src={img} alt={name} />

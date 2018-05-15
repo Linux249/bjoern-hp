@@ -8,7 +8,7 @@ export default styled.div`
     box-shadow: 20px 20px 28px rgba(0,0,0,0.15);
     
     padding: 20px;
-    margin 30px;
+    margin: 30px;
     
     //border: solid;
     

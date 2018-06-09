@@ -7,6 +7,7 @@ const Img = styled.img`
     width: inherit;
     max-width: 450px;
     min-width: 200px;
+    max-height: 500px;
     float: left;
     margin: 1rem;
     //margin-bottom: 20px;

@@ -8,3 +8,5 @@ export const Column = styled.div`
     flex-direction: column;
     justify-content: center;
 `
+
+export default Column

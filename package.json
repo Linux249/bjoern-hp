@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "homepage": "https://linux249.github.io/bjoern-hp/",
   "dependencies": {
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.14",
-    "styled-components": "^2.1.2"
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "styled-components": "^3.1.2"
   },
   "scripts": {
     "start": "react-scripts start",

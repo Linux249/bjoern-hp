@@ -5,13 +5,7 @@ Studium an der PH Heidelberg in den Fächern Kunst, Mathematik und Technik.
 Seit 2014 Residenz für künstlerisches Schaffen, Breidenbach Studios, Heidelberg
 
 Ausstellungen: 
-2018 	Pannonica, Heidelberg, „Abstract Landscapes“, Einzelausstellung 
-2017 	WOW ART LU, Ludwigshafen, „Eden oder das verlorene Paradies“, Gruppenausstellung
-2017 	Milchzenrale, Heidelberg, Alternativer Frühling, „ Wir haben einen(T)Raum", Gruppenausstellung
-2016 	Breidenbach Studios, Heidelberg, „Just in Case", Gruppenausstellung 
-2016 	Port 25, Mannheim, „Raum für Gegenwartskunst", Gruppenausstellung 
-2015 	Breidenbach Studios, Heidelberg, „Art Breidenbach #3", Gruppenausstellung 
-2013 	PH Heidelberg, "Civitella best of", Gruppenausstellung 
+ 
 
 Öffentliche Sammlungen: 
 2016 Stadt Heidelberg
@@ -76,11 +70,12 @@ Gouache, Acryl auf Papier
 
 
 TODO
-- 3 Kategorien auf die startseite
-- Meta Information zu den Bildern und Bilder größer
-- Ausstellungen auflisten + designen 
-- Überschrift ändern
-- Über mich überarbeiten (neuer Text)
-- Kontakt (Adresse/Mail)
+- [ ] 3 Kategorien auf die startseite
+- [ ] Meta Information zu den Bildern und Bilder größer
+- [x] Ausstellungen auflisten 
+- [ ] Ausstellungen designen 
+- [ ] Überschrift ändern
+- [ ] Über mich überarbeiten (neuer Text)
+- [ ] Kontakt (Adresse/Mail)
 
 ein bisschen Design

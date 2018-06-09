@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AppStyle from './style/App'
 import Header from './components/Header'
+import Footer from './components/Footer'
 import Body from './style/Body'
 import { HashRouter, Route } from 'react-router-dom'
 import Home from './pages/Home'
@@ -23,6 +24,8 @@ class App extends Component {
                         <Route  path='/björn' component={Bjoern}/>
                         <Route  path='/kontakt' component={Kontakt}/>
                     </Body>
+
+                    <Footer />
                 </AppStyle>
             </HashRouter>
         );

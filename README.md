@@ -1,8 +1,4 @@
-Björn Ruppert, geboren 1980 in Ulm, lebt und arbeitet als freischaffender Künstler in Heidelberg. In seinen Ölmalereien ertastet er die Grenzen von Natur und Architektur und eröffnet so neue Räume, die den Blick bis hin zum Horizont ziehen. Seine kreierten Orte sind oft karg und kühl und doch durchzogen von fremdartigen Pflanzen sowie Spuren menschlichen Daseins in Form von Urbanen Baumaterialien wie Holz, Stein oder Beton. Diese fügen sich in die Landschaft ein oder formieren sich zu neuen Konstrukten.
-Trotz des langwierigen Arbeitsprozesses bewahren die Bilder etwas rohes und Ursprüngliches. Die Farbe wird von Ruppert in zahlreichen Schichten aufgetragen und teilweise wieder abgeschliffen, wodurch schwere raue Oberflächenstrukturen als auch leichte transparente Flächen entstehen.
-
-Studium an der PH Heidelberg in den Fächern Kunst, Mathematik und Technik. 
-Seit 2014 Residenz für künstlerisches Schaffen, Breidenbach Studios, Heidelberg
+B
 
 Ausstellungen: 
  
@@ -74,7 +70,7 @@ TODO
 - [ ] Meta Information zu den Bildern und Bilder größer
 - [x] Ausstellungen auflisten 
 - [ ] Ausstellungen designen 
-- [ ] Überschrift ändern
+- [x] Überschrift ändern
 - [ ] Über mich überarbeiten (neuer Text)
 - [ ] Kontakt (Adresse/Mail)
 

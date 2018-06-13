@@ -1,4 +1,8 @@
+html, body{ height:100%; margin:0; }
+
 body {
+    display:flex;
+    flex-direction:column;
     margin: 0;
     padding: 0;
     font: 30px/35px "BayerNext-Regular",sans-serif;
@@ -19,4 +23,8 @@ img {
     height: 100%;
     width: 100%;
     object-fit: scale-down;
+}
+
+#root {
+    height: 100%;
 }

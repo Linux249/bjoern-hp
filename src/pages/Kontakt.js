@@ -10,18 +10,22 @@ const Kontakt = styled.div`
     display: flex;
     justify-content: space-around;
 `
+const Center = styled.div`
+    display: flex;
+    justify-content: center;
+`
 
-export default () => <Kontakt>
-    <Fragment>
-        <Column>
-            Björn Ruperecht <br/>
-            mail@email.com <br/>
-            0172 123 456 <br/>
-
-        </Column>
-        <Column>
-            <a href="https://www.instagram.com/bjoernruppert/"><Instagram/></a>
-            <a href="https://www.facebook.com/bjorn.ruppert"><Facebook/></a>
-        </Column>
-    </Fragment>
-</Kontakt>
+export default () =>
+    <Kontakt>
+        <Fragment>
+            <Column>
+                <div>Björn Ruperecht </div>
+                <div>mail@email.com</div>
+                <div>0172 123 456</div>
+                <Center>
+                    <a href="https://www.instagram.com/bjoernruppert/"><Instagram/></a>
+                    <a href="https://www.facebook.com/bjorn.ruppert"><Facebook/></a>
+                </Center>
+            </Column>
+        </Fragment>
+    </Kontakt>

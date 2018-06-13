@@ -1,6 +1,21 @@
 import React from 'react'
-import {Column} from "../style/Column";
+import Line from '../style/Line'
+import styled from 'styled-components'
 
-export default () => <Column>
+const Footer = styled.div`
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+    margin-top: 20px;
+    height: 4rem; 
+
+`
+
+export default () => <Footer>
+    <Line/>
+
     impressum
-</Column>
+</Footer>

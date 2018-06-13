@@ -8,6 +8,5 @@ export default styled.div`
     align-items: center;
     flex-flow: column;
     
-    
-        
+    min-height: 100%;         
 `

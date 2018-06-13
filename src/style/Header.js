@@ -7,7 +7,7 @@ export default styled.div`
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    min-height: 200px;
+    min-height: 150px;
 
-    margin-top: 20px;
+    margin-top: 10px;
 `

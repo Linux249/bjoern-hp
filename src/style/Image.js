@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 export default styled.div`
     max-width: 40%;
-    box-shadow: 20px 20px 28px rgba(0,0,0,0.15);
+    box-shadow: 20px 20px 28px 20px rgba(0,0,0,0.15);
     
     padding: 20px;
     margin: 30px;

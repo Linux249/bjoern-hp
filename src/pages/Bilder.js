@@ -19,8 +19,8 @@ const imgs = context.keys().map((filename, i) =>
 
 const Row = styled.div`
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-end;
+    //justify-content: space-between;
     
     width: 100%;
     margin: 3rem 0;
@@ -35,11 +35,17 @@ const ImgBig = styled.div`
     align-content: center;
     //height: 100%;
     //border: 1px solid lightcoral;
+    
+    box-shadow: 20px 20px 28px 20px rgba(0,0,0,0.15);
+    
+    padding: 20px;
 `
 
 const ImgInfo = styled.div`
     padding: 1rem;
     //border: 1px solid lightcoral;
+    
+    //font-size: 1rem;
 
 `
 

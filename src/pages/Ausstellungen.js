@@ -40,16 +40,22 @@ const ausstellungen = [{
 }]
 
 const Name = styled.div`
-  
+  font-size: 3rem;
 `
-export default () => <div>
-    <Column>
-        {ausstellungen.map(e => <Column>
-            <Name>{e.year}</Name>
-            <Name>{e.name}</Name>
-            <Name>{e.place}</Name>
-            <Name>{e.type}</Name>
-            <br />
-        </Column>)}
-    </Column>
-</div>
+
+const Ausstellung = styled.div`
+    margin: 1.5rem;
+
+`
+
+export default () => <Column>
+
+        {ausstellungen.map(e => (
+            <Ausstellung>
+                <div>{e.year}</div>
+                <Name>{e.name}</Name>
+                <div>{e.place}</div>
+                <div>{e.type}</div>
+            </Ausstellung>)
+        )}
+</Column>

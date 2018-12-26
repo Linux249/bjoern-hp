@@ -1,7 +1,5 @@
 {
-  "name": "bjoern-hp",
   "version": "0.1.0",
-  "homepage": "https://linux249.github.io/bjoern-hp/",
   "dependencies": {
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
@@ -18,6 +16,7 @@
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {
-    "gh-pages": "^1.0.0"
+    "gh-pages": "^1.0.0",
+    "prettier": "^1.15.3"
   }
 }

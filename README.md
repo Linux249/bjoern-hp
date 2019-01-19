@@ -36,3 +36,9 @@ Björn Ruppert, geboren 1980 in Ulm, lebt und arbeitet als freischaffender Küns
 Diese urbanen Ansichten entstehen in einem anhaltenden Übermalungsakt. Die einzelnen Schichten aus Ölfarbe und die zeitliche Hingabe, mit der sich der Maler dem Motiv widmet, kennzeichnen die Intensität der Bilder.
 
 Das Rohe und Ursprüngliche der Ölbilder findet sich auch in den Linoldrucken wieder, die der Künstler, als eine minimalistische Ausdrucksweise für sich entdeckt hat. In beiden Fällen sind die Motive losgelöst von Ort und Zeit und entstehen aus der Vorstellungskraft des Künstlers.
+
+Tools: 
+lqip-loader
+
+Articles to read: 
+https://www.robinosborne.co.uk/2018/01/05/image-placeholders-do-it-right-or-dont-do-it-at-all-please/

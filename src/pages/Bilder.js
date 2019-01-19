@@ -49,7 +49,7 @@ const context = require.context('../img/paintings', false, /\.(jpg)$/);
 const imgs = context.keys().map((filename, i) => (
     <Row key={i}>
         <ImgBig>
-            <img src={context(filename)} alt={filename.replace('./', '').replace('.jpg', '')} />
+            <img src={context(filename).src} alt={filename.replace('./', '').replace('.jpg', '')} />
         </ImgBig>
     </Row>
 ));
@@ -63,7 +63,7 @@ export default class Bilder extends Component {
             <div>Limoldrucke</div>*/}
                 <Row>
                     <ImgBig>
-                        <img src={Stadtflucht} alt="Stadtflucht" />
+                        <img src={Stadtflucht.src} alt="Stadtflucht" />
                     </ImgBig>
                 </Row>
                 <ImgInfo>
@@ -75,7 +75,7 @@ export default class Bilder extends Component {
 
                 <Row>
                     <ImgBig>
-                        <img src={OhneTitel1} alt="OhneTitel1" />
+                        <img src={OhneTitel1.src} alt="OhneTitel1" />
                     </ImgBig>
                 </Row>
                 <ImgInfo>
@@ -87,7 +87,7 @@ export default class Bilder extends Component {
 
                 <Row>
                     <ImgBig>
-                        <img src={WinterlicheUrbaneLandschaft} alt="WinterlicheUrbaneLandschaft" />
+                        <img src={WinterlicheUrbaneLandschaft.src} alt="WinterlicheUrbaneLandschaft" />
                     </ImgBig>
                 </Row>
                 <ImgInfo>
@@ -99,7 +99,7 @@ export default class Bilder extends Component {
 
                 <Row>
                     <ImgBig>
-                        <img src={OhneTitel2} alt="OhneTitel2" />
+                        <img src={OhneTitel2.src} alt="OhneTitel2" />
                     </ImgBig>
                 </Row>
                 <ImgInfo>
@@ -111,7 +111,7 @@ export default class Bilder extends Component {
 
                 <Row>
                     <ImgBig>
-                        <img src={Walden} alt="Walden" />
+                        <img src={Walden.src} alt="Walden" />
                     </ImgBig>
                 </Row>
                 <ImgInfo>
@@ -123,7 +123,7 @@ export default class Bilder extends Component {
 
                 <Row>
                     <ImgBig>
-                        <img src={OhneTitel3} alt="OhneTitel3" />
+                        <img src={OhneTitel3.src} alt="OhneTitel3" />
                     </ImgBig>
                 </Row>
                 <ImgInfo>
@@ -135,7 +135,7 @@ export default class Bilder extends Component {
 
                 <Row>
                     <ImgBig>
-                        <img src={Winter} alt="Winter" />
+                        <img src={Winter.src} alt="Winter" />
                     </ImgBig>
                 </Row>
                 <ImgInfo>
@@ -147,7 +147,7 @@ export default class Bilder extends Component {
 
                 <Row>
                     <ImgBig>
-                        <img src={OhneTitel4} alt="OhneTitel4" />
+                        <img src={OhneTitel4.src} alt="OhneTitel4" />
                     </ImgBig>
                 </Row>
                 <ImgInfo>

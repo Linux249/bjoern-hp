@@ -21,7 +21,9 @@ const Text = styled.p`
 
 export default () => (
     <Page>
-        <Img src={profil} alt={profil.toString()} />
+        <Img src={profil.preSrc} alt="Profile" />
+        <Img src={profil.src} alt="Profile" />
+
         <br />
         <Text>
             Björn Ruppert, geboren 1980 in Ulm, lebt und arbeitet als freischaffender Künstler in

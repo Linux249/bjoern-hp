@@ -9,6 +9,7 @@ import Bilder from './pages/Bilder'
 import Ausstellungen from './pages/Ausstellungen'
 import Bjoern from './pages/Bjoern'
 import Kontakt from './pages/Kontakt'
+import Demo from "./pages/Demo";
 
 class App extends Component {
     render() {
@@ -23,6 +24,7 @@ class App extends Component {
                         <Route  path='/ausstellungen' component={Ausstellungen}/>
                         <Route  path='/björn' component={Bjoern}/>
                         <Route  path='/kontakt' component={Kontakt}/>
+                        <Route  path='/demo' component={Demo}/>
                     </Body>
 
                     <Footer />

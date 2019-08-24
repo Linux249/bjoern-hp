@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 // import Image from '../components/Image';
 import Page from '../style/Page';
@@ -54,111 +54,136 @@ const imgs = context.keys().map((filename, i) => (
     </Row>
 ));
 
-export default class Bilder extends Component {
-    render() {
-        return (
-            <Page>
-                {/*<div>Landschaftsmalerei</div>
-            <div>Räume und Betonlandschaften</div>
-            <div>Limoldrucke</div>*/}
-                <Row>
-                    <ImgBig>
-                        <img src={Stadtflucht} alt="Stadtflucht" />
-                    </ImgBig>
-                </Row>
-                <ImgInfo>
-                    <div>"Stadtflucht"</div>
-                    <div>Öl auf Holz</div>
-                    <div>60 x 150 cm</div>
-                    <div>2017</div>
-                </ImgInfo>
+function Bilder() {
+    // WP GUIDE: https://snipcart.com/blog/reactjs-wordpress-rest-api-example
+    const postUrl = 'https://api.bjoernruppert.de/index.php?rest_route=/sections/v1/post';
+    const catUrl = 'https://api.bjoernruppert.de/index.php?rest_route=/wp/v2/categories'
 
-                <Row>
-                    <ImgBig>
-                        <img src={OhneTitel1} alt="OhneTitel1" />
-                    </ImgBig>
-                </Row>
-                <ImgInfo>
-                    <div>"ohne Titel"</div>
-                    <div>Öl auf Leinwand</div>
-                    <div>120 x 165 cm</div>
-                    <div>2018</div>
-                </ImgInfo>
+    const [loading, setLoading] = useState(true);
+    const [pics, setPics] = useState([]);
 
-                <Row>
-                    <ImgBig>
-                        <img src={WinterlicheUrbaneLandschaft} alt="WinterlicheUrbaneLandschaft" />
-                    </ImgBig>
-                </Row>
-                <ImgInfo>
-                    <div>"winterliche urbane Landschaft"</div>
-                    <div>Gouache, Acryl auf Papier</div>
-                    <div>70 x 100 cm</div>
-                    <div>2016</div>
-                </ImgInfo>
+    useEffect(async () => {
+        const data = await fetch(postUrl).then(r => r.json());
+        console.log(data);
+        setPics(data);
+    }, []);
 
-                <Row>
-                    <ImgBig>
-                        <img src={OhneTitel2} alt="OhneTitel2" />
-                    </ImgBig>
-                </Row>
-                <ImgInfo>
-                    <div>"ohne Titel"</div>
-                    <div>Öl auf Leinwand</div>
-                    <div>110 x 130 cm</div>
-                    <div>2017</div>
-                </ImgInfo>
+    return (
+        <Page>
+            {pics.map(pic => (
+                <>
+                    <Row>
+                        <ImgBig>
+                            <img src={pic.acf.image.url} alt="Stadtflucht" />
+                        </ImgBig>
+                    </Row>
+                    <ImgInfo>
+                        <div>{pic.acf.name}</div>
+                        <div>{pic.acf.description}</div>
+                        <div>{pic.acf.size}</div>
+                        <div>{pic.acf.year}</div>
+                    </ImgInfo>
+                </>
+            ) )}
+            <Row>
+                <ImgBig>
+                    <img src={Stadtflucht} alt="Stadtflucht" />
+                </ImgBig>
+            </Row>
+            <ImgInfo>
+                <div>"Stadtflucht"</div>
+                <div>Öl auf Holz</div>
+                <div>60 x 150 cm</div>
+                <div>2017</div>
+            </ImgInfo>
 
-                <Row>
-                    <ImgBig>
-                        <img src={Walden} alt="Walden" />
-                    </ImgBig>
-                </Row>
-                <ImgInfo>
-                    <div>"Walden"</div>
-                    <div>Öl auf Holz</div>
-                    <div>150 x 120 cm</div>
-                    <div>2017</div>
-                </ImgInfo>
+            <Row>
+                <ImgBig>
+                    <img src={OhneTitel1} alt="OhneTitel1" />
+                </ImgBig>
+            </Row>
+            <ImgInfo>
+                <div>"ohne Titel"</div>
+                <div>Öl auf Leinwand</div>
+                <div>120 x 165 cm</div>
+                <div>2018</div>
+            </ImgInfo>
 
-                <Row>
-                    <ImgBig>
-                        <img src={OhneTitel3} alt="OhneTitel3" />
-                    </ImgBig>
-                </Row>
-                <ImgInfo>
-                    <div>"ohne Titel"</div>
-                    <div>Öl auf Holz</div>
-                    <div>190 x 140 cm</div>
-                    <div>2017</div>
-                </ImgInfo>
+            <Row>
+                <ImgBig>
+                    <img src={WinterlicheUrbaneLandschaft} alt="WinterlicheUrbaneLandschaft" />
+                </ImgBig>
+            </Row>
+            <ImgInfo>
+                <div>"winterliche urbane Landschaft"</div>
+                <div>Gouache, Acryl auf Papier</div>
+                <div>70 x 100 cm</div>
+                <div>2016</div>
+            </ImgInfo>
 
-                <Row>
-                    <ImgBig>
-                        <img src={Winter} alt="Winter" />
-                    </ImgBig>
-                </Row>
-                <ImgInfo>
-                    <div>"Winter"</div>
-                    <div>Öl auf Holz</div>
-                    <div>60 x 150 cm</div>
-                    <div>2017</div>
-                </ImgInfo>
+            <Row>
+                <ImgBig>
+                    <img src={OhneTitel2} alt="OhneTitel2" />
+                </ImgBig>
+            </Row>
+            <ImgInfo>
+                <div>"ohne Titel"</div>
+                <div>Öl auf Leinwand</div>
+                <div>110 x 130 cm</div>
+                <div>2017</div>
+            </ImgInfo>
 
-                <Row>
-                    <ImgBig>
-                        <img src={OhneTitel4} alt="OhneTitel4" />
-                    </ImgBig>
-                </Row>
-                <ImgInfo>
-                    <div>"ohne Titel"</div>
-                    <div>Öl auf Holz</div>
-                    <div>60 x 100 cm</div>
-                    <div>2016</div>
-                </ImgInfo>
+            <Row>
+                <ImgBig>
+                    <img src={Walden} alt="Walden" />
+                </ImgBig>
+            </Row>
+            <ImgInfo>
+                <div>"Walden"</div>
+                <div>Öl auf Holz</div>
+                <div>150 x 120 cm</div>
+                <div>2017</div>
+            </ImgInfo>
 
-                {imgs}
-            </Page>
-        );
-    }
+            <Row>
+                <ImgBig>
+                    <img src={OhneTitel3} alt="OhneTitel3" />
+                </ImgBig>
+            </Row>
+            <ImgInfo>
+                <div>"ohne Titel"</div>
+                <div>Öl auf Holz</div>
+                <div>190 x 140 cm</div>
+                <div>2017</div>
+            </ImgInfo>
+
+            <Row>
+                <ImgBig>
+                    <img src={Winter} alt="Winter" />
+                </ImgBig>
+            </Row>
+            <ImgInfo>
+                <div>"Winter"</div>
+                <div>Öl auf Holz</div>
+                <div>60 x 150 cm</div>
+                <div>2017</div>
+            </ImgInfo>
+
+            <Row>
+                <ImgBig>
+                    <img src={OhneTitel4} alt="OhneTitel4" />
+                </ImgBig>
+            </Row>
+            <ImgInfo>
+                <div>"ohne Titel"</div>
+                <div>Öl auf Holz</div>
+                <div>60 x 100 cm</div>
+                <div>2016</div>
+            </ImgInfo>
+
+            {/*{imgs}*/}
+        </Page>
+    );
 }
+
+export default Bilder
